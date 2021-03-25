@@ -14,8 +14,10 @@ class ViewController: UIViewController {
     }
 
     @IBAction func button1Action(_ sender: UIButton) {
-        
-        
+        let alert = UIAlertController()
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+        alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
+        self.present(alert, animated: true, completion: nil)
     }
 }
 
